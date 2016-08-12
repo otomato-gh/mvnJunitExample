@@ -1,4 +1,4 @@
-FROM antweiss/mvnjunitexampe:latest
+FROM antweiss/mvnjunitexampe:master
 
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp

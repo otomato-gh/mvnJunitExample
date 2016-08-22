@@ -4,5 +4,5 @@ COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 
 # Modify per your build tool
-RUN mvn clean install -Dmaven.repo.local=./.m2
+RUN mvn clean delpoy -Dmaven.repo.local=./.m2
 CMD ["mvn", "run"]

@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.howtodoinjava.junit</groupId>
-    <artifactId>mavenJunitExample</artifactId>
+    <groupId>link.otomato</groupId>
+    <artifactId>junitut</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>mavenJunitDemo</name>
+    <name>junitut</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
@@ -33,10 +33,20 @@
         </plugins>
     </build>
     <distributionManagement>
-        <repository>
+        <!--repository>
             <id>bintray-antweiss-maven</id>
             <name>antweiss-maven</name>
-            <url>https://api.bintray.com/maven/antweiss/maven/mavenJunitDemo;publish=1</url>
-        </repository>
-    </distributionManagement>
+            <url>https://api.bintray.com/maven/antweiss/maven/junitut/;publish=1;</url>
+    </repository -->
+     <repository>
+	             <id>otofactory</id>
+		             <name>otofactory-releases</name>
+			             <url>http://otofactory-givv.rhcloud.com/artifactory/libs-release-local</url>
+				         </repository>
+	     <snapshotRepository>
+		             <id>otofactory-snap</id>
+			             <name>otofactory-snapshots</name>
+				             <url>http://otofactory-givv.rhcloud.com/artifactory/libs-snapshot-local</url>
+					         </snapshotRepository>
+					 </distributionManagement>
 </project>

@@ -13,7 +13,8 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-    </dependencies>
+</dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -31,6 +32,22 @@
                 </configuration>
             </plugin>
         </plugins>
+        <pluginManagement>
+        	<plugins>
+        		<plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+        			<artifactId>maven-jar-plugin</artifactId>
+        		      <configuration>
+        			  <archive>
+        			 <manifest>
+        			<addClasspath>true</addClasspath>
+        			  <mainClass>link.otomato.junitut.App</mainClass>
+        			 </manifest>
+        			  </archive>
+        			  </configuration>
+        			 </plugin>
+                 </plugins>
+             </pluginManagement>
     </build>
     <distributionManagement>
         <!--repository>
